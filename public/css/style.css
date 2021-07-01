@@ -43,13 +43,18 @@ td{
     font-size: 1.5rem;	
 }
 
-.header { grid-area: 1 / 1 / 2 / 4; }
-
-.photo { grid-area: 1 / 3 / 3 / 4; }
-
 .table-data{
 margin-top:4vh;	
 	
 }
 
+.container {
+  display: grid; 
+  grid-template-columns: 1fr 1.2fr 0.8fr; 
+  grid-template-rows: 0.4fr 1.1fr 1.5fr; 
+  gap: 0px 0px; 
+}
+
+.header { grid-area: 1 / 1 / 2 / 4; }
+.photo { grid-area: 1 / 3 / 3 / 4; }
 .questions { grid-area: 2 / 1 / 4 / 3; }
