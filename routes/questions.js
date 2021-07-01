@@ -129,28 +129,13 @@ res.redirect('/questions/question-list-user');
 
  
 router.get('/question-list-user', function(req, res, next) {
-/*	
+	
     var sql='SELECT * FROM questions WHERE answer IS NOT NULL AND answer<>""';
     db.all(sql, function (err, data, fields) {
     if (err) throw err;
     res.render('question-list-user', { title: 'Answered Questions', userData: data});
   });
-  
-  */
-	
- db.collection('questions').findOne({}, function (findErr, result) {
-    if (findErr) throw findErr;
-    console.log(result.name);
-    client.close();
-  });
-	
-	
 });  
-
-
-
-
-
   
 router.get('/question-list', function(req, res, next) {
 	

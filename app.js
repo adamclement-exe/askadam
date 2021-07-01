@@ -7,7 +7,7 @@ var indexRouter = require('./routes/index');
 var questionsRouter = require('./routes/questions');
 ;
 var app = express();
-app.set( 'port', ( process.env.PORT || 5000 ));
+
 var cookieParser = require('cookie-parser');
 app.use(cookieParser('2406'));
 
