@@ -9,7 +9,6 @@ let db = new sqlite3.Database('./questions.db', (err) => {
   }
   console.log('Connected to the questions database.');
 });
-module.exports = db;
 
 */
 const mongoServer = require('mongodb');
@@ -31,3 +30,4 @@ client.connect( (err, db) => {
         db.close();
     }
 });
+module.exports = client;
