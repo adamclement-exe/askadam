@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fetch using SQLite and Node.js</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+<body>
+    <div class="table-data">
+<h2>Display Data using Node.js & SQLite</h2>
+<form id="editform" method="post">
+
+    <table border="1">
+        <tr>
+			<th>Question Number</th>
+            <th>Question Text</th>
+            <th>Answer</th>
+
+        </tr>
+        
+        <%
+        if(userData.length!=0){
+        var i=1;
+        userData.forEach(function(data){
+        %>
+		
+
+        <tr>
+            <td><%=i; %> <input type="hidden" id="id" name="id" value="<%=data.id%>"></td>
+            <td><input type="text" name="question"  id="question"  value="<%=data.question %>"></input></td>
+            <td><input type="text" name="answer" id="answer" value="<%=data.answer %>"></input></td>
+			
+
+            <td class="buttoncell"><a href="/questions/cancel/<%=data.id%>">Cancel</a></td>
+			<td class="buttoncell"><a href="javascript:{}" onclick="document.getElementById('editform').submit(); return false;">Save</a></td>
+        </tr>
+        <%  i++; }) %>
+        <% } else{ %>
+            <tr>
+                <td colspan="7">No Data Found</td>
+            </tr>
+        <% } %>
+    </table>
+</form>
+    </div>
+</body>
+</html>

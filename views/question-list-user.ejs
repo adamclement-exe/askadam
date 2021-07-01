@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Q&A</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+<body>
+    <div class="table-data">
+<h2>Q&A</h2>
+<a href="/questions/add/">Ask A Question</a>
+
+<br/><br/><br/>
+    <table border="1">
+        <tr>
+            <th>Question Text</th>
+            <th>Answer</th>
+
+        </tr>
+        
+        <%
+        if(userData.length!=0){
+        var i=1;
+        userData.forEach(function(data){
+        %>
+        <tr>
+            <td><%=data.question %></td>
+            <td><%=data.answer %></td>
+
+
+        </tr>
+        <%  i++; }) %>
+        <% } else{ %>
+            <tr>
+                <td colspan="7">No Data Found</td>
+            </tr>
+        <% } %>
+    </table>
+    </div>
+</body>
+</html>

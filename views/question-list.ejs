@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Question List - Admin</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+<body>
+    <div class="table-data">
+<h2>Question List - Admin</h2>
+<a href="/questions/add/">Add New Question</a>
+<a href="/questions/logout/">Logout</a>
+<br/><br/><br/>
+    <table border="1">
+        <tr>
+			<th>Question Number</th>
+            <th>Question Text</th>
+            <th>Answer</th>
+
+        </tr>
+        
+        <%
+        if(userData.length!=0){
+        var i=1;
+        userData.forEach(function(data){
+        %>
+        <tr>
+            <td><%=i; %></td>
+            <td><%=data.question %></td>
+            <td><%=data.answer %></td>
+
+            <td class="buttoncell"><a href="/questions/edit/<%=data.id%>">Edit</a></td>
+            <td class="buttoncell"><a href="/questions/delete/<%=data.id%>">Delete</a></td>
+        </tr>
+        <%  i++; }) %>
+        <% } else{ %>
+            <tr>
+                <td colspan="7">No Data Found</td>
+            </tr>
+        <% } %>
+    </table>
+    </div>
+</body>
+</html>

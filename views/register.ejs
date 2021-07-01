@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Register as a New User</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+<body>
+    <div class="table-data">
+<h2>Register as a New User</h2>
+<h3><%=message %></h3>
+<form id="adduser" method="post">
+
+    <table border="1">
+        <tr>
+            <th>Username</th>
+            <th>Password</th>
+
+        </tr>
+        
+		
+
+        <tr>
+
+            <td><input mandatory type="text" name="username"  id="username"></input></td>
+            <td><input mandatory type="password" name="password" id="password"></input></td>
+			
+
+            <td class="buttoncell"><a href="question-list-user">Cancel</a></td>
+			<td class="buttoncell"><a href="javascript:{}" onclick="document.getElementById('adduser').submit(); return false;">Register</a></td>
+        </tr>
+
+    </table>
+</form>
+    </div>
+</body>
+</html>
