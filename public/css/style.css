@@ -20,7 +20,7 @@ a {
 .buttoncell{
 	text-align:center;
 width:10vw;
-	
+    height: 20vh;	
 }
 
 a:hover {
