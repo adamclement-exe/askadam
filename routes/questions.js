@@ -138,12 +138,17 @@ router.get('/question-list-user', function(req, res, next) {
   
   */
 	
-
-  db.collection("questions").findOne({}, function(err, result) {
-    if (err) throw err;
-    console.log(result.name);
-    db.close();
-  });
+db
+      .connect()
+      .then(
+        client =>
+          client
+            .db("aaa")
+            .listCollections()
+            .toArray() // Returns a promise that will resolve to the list of the collections
+      )
+      .then(cols => console.log("Collections", cols))
+      .finally(() => client.close());
 	
 	
 });  
