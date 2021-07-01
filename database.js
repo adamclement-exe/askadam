@@ -20,14 +20,4 @@ const serverUrl = 'mongodb+srv://aaa:uR2PckB4TvEvQxRW@cluster0.y12j6.mongodb.net
 const dbUrl =  serverUrl + dbName;
 const client = new mongoClient(dbUrl, { useUnifiedTopology: true});
 
-client.connect( (err, db) => {
-    if (err) {
-        console.log(err);
-        return;
-    }
-    else {
-        console.log('Database successfully created!');
-        db.close();
-    }
-});
 module.exports = client;
