@@ -32,7 +32,7 @@ a:active {
   top: 5px;
 }
 
-th,td{
+.table-data th,td{
 
 	min-width:40vw;
 	
