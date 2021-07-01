@@ -38,6 +38,11 @@ th,td{
 	
 }
 
+td{
+    color: #ff3300;
+    font-size: 1.5rem;	
+}
+
 .header { grid-area: 1 / 1 / 2 / 4; }
 
 .photo { grid-area: 1 / 3 / 3 / 4; }
