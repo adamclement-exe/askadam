@@ -138,8 +138,8 @@ router.get('/question-list-user', function(req, res, next) {
   
   */
 	
- var dbo = db.db("aaa");
-  dbo.collection("questions").findOne({}, function(err, result) {
+
+  db.collection("questions").findOne({}, function(err, result) {
     if (err) throw err;
     console.log(result.name);
     db.close();
