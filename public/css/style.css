@@ -46,7 +46,7 @@ a:active {
   .table thead th {
     border: none;
     padding: 30px;
-    font-size: 14px;
+    font-size:2rem;
     color: #000; }
   .table tbody tr {
     margin-bottom: 10px; }
@@ -64,7 +64,7 @@ a:active {
         -o-transition: none;
         transition: none; } }
     .table tbody td i {
-      font-size: 12px;
+      font-size: 1.5rem;
       color: rgba(0, 0, 0, 0.3); }
     .table tbody td .img {
       width: 90px;
@@ -73,9 +73,9 @@ a:active {
     .table tbody td a {
       display: block;
       color: #ffafb0;
-      font-size: 12px; }
+      font-size: 1.25rem; }
       .table tbody td a strong {
-        font-size: 12px;
+        font-size: 1.25rem;
         font-weight: 600;
         color: #666666; }
     .table tbody td:hover {
@@ -84,7 +84,7 @@ a:active {
     font-weight: 400;
     color: #000; }
     .table tfoot tr th a i {
-      font-size: 12px; }
+      font-size: 1.25rem; }
     .table tfoot tr th a:hover {
       color: #ffafb0; }
 
