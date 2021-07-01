@@ -64,6 +64,7 @@ a:active {
         -o-transition: none;
         transition: none; } }
     .table tbody td i {
+      min-width:40vw;
       font-size: 1.5rem;
       color: rgba(0, 0, 0, 0.3); }
     .table tbody td .img {
@@ -94,7 +95,7 @@ a:active {
 .photo { grid-area: 1 / 3 / 3 / 4; }
 
 .table-data{
-margin-top:2vh;	
+margin-top:4vh;	
 	
 }
 
